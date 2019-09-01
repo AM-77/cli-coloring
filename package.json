@@ -1,5 +1,5 @@
 {
-  "name": "node-cli-colors",
+  "name": "cli-coloring",
   "version": "1.0.0",
   "description": "A simple node coloring for the console CLI logs",
   "main": "index.js",

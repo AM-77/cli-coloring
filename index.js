@@ -1,6 +1,6 @@
 const colors = require("./lib/colors")
 
-const cli_colors = {
+const cli_coloring = {
 
     // text styling
     bold: (text) => {
@@ -113,4 +113,4 @@ const cli_colors = {
 
 }
 
-module.exports = cli_colors
+module.exports = cli_coloring
