@@ -4,7 +4,7 @@ const console_colors = {
 
     // text styling
     bold: (text) => {
-        this._text = text || ""
+        thconsole_colorsis._text = text || ""
         return colors.styles.bold + this._text + colors.end
     },
     dim: (text) => {
@@ -69,6 +69,48 @@ const console_colors = {
     yellow: (text) => {
         this._text = text || ""
         return colors.colors.yellow + this._text + colors.end
+    },
+
+    // background coloring
+    bg: {
+        white: (text) => {
+            this._text = text || ""
+            return colors.background.white + this._text + colors.end
+        },
+        grey: (text) => {
+            this._text = text || ""
+            return colors.background.grey + this._text + colors.end
+        },
+        black: (text) => {
+            this._text = text || ""
+            return colors.background.black + this._text + colors.end
+        },
+        blue: (text) => {
+            this._text = text || ""
+            return colors.background.blue + this._text + colors.end
+        },
+        cyan: (text) => {
+            this._text = text || ""
+            return colors.background.cyan + this._text + colors.end
+        },
+        green: (text) => {
+            this._text = text || ""
+            return colors.background.green + this._text + colors.end
+        },
+        magenta: (text) => {
+            this._text = text || ""
+            return colors.background.magenta + this._text + colors.end
+        },
+        red: (text) => {
+            this._text = text || ""
+            return colors.background.red + this._text + colors.end
+        },
+        yellow: (text) => {
+            this._text = text || ""
+            return colors.background.yellow + this._text + colors.end
+        }
     }
 
 }
+
+module.exports = console_colors
