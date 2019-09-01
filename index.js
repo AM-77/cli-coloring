@@ -32,4 +32,43 @@ const console_colors = {
         return colors.styles.hidden + this._text + colors.end
     },
 
+
+    // text coloring
+    white: (text) => {
+        this._text = text || ""
+        return colors.colors.white + this._text + colors.end
+    },
+    grey: (text) => {
+        this._text = text || ""
+        return colors.colors.grey + this._text + colors.end
+    },
+    black: (text) => {
+        this._text = text || ""
+        return colors.colors.black + this._text + colors.end
+    },
+    blue: (text) => {
+        this._text = text || ""
+        return colors.colors.blue + this._text + colors.end
+    },
+    cyan: (text) => {
+        this._text = text || ""
+        return colors.colors.cyan + this._text + colors.end
+    },
+    green: (text) => {
+        this._text = text || ""
+        return colors.colors.green + this._text + colors.end
+    },
+    magenta: (text) => {
+        this._text = text || ""
+        return colors.colors.magenta + this._text + colors.end
+    },
+    red: (text) => {
+        this._text = text || ""
+        return colors.colors.red + this._text + colors.end
+    },
+    yellow: (text) => {
+        this._text = text || ""
+        return colors.colors.yellow + this._text + colors.end
+    }
+
 }
