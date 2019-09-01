@@ -1,0 +1,19 @@
+{
+  "name": "node-console-colors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "AM-77",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AM-77/node-console-colors.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AM-77/node-console-colors/issues"
+  }
+}
