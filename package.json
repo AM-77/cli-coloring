@@ -1,19 +1,20 @@
 {
-  "name": "node-console-colors",
+  "name": "node-cli-colors",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple node coloring for the console CLI logs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index",
+    "test": "node test"
   },
   "keywords": [],
   "author": "AM-77",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AM-77/node-console-colors.git"
+    "url": "https://github.com/AM-77/node-cli-colors.git"
   },
   "bugs": {
-    "url": "https://github.com/AM-77/node-console-colors/issues"
+    "url": "https://github.com/AM-77/node-cli-colors/issues"
   }
 }

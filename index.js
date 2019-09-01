@@ -1,10 +1,10 @@
 const colors = require("./lib/colors")
 
-const console_colors = {
+const cli_colors = {
 
     // text styling
     bold: (text) => {
-        thconsole_colorsis._text = text || ""
+        this._text = text || ""
         return colors.styles.bold + this._text + colors.end
     },
     dim: (text) => {
@@ -113,4 +113,4 @@ const console_colors = {
 
 }
 
-module.exports = console_colors
+module.exports = cli_colors
