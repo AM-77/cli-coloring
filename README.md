@@ -54,3 +54,7 @@ A simple text coloring for nodejs logs
   console.log("yellow background: ", cli_coloring.bg.yellow("Whatever world ."))
 ```
 
+## What Should You Get
+<img src="./screenshots/testing.png" />
+
+
