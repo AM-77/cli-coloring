@@ -1,4 +1,4 @@
-const cli_coloring = require("./index")
+const cli_coloring = require(".")
 
 // text styling testing
 console.log("Text Styling Testing\n");
@@ -26,12 +26,14 @@ console.log("yellow text: ", cli_coloring.yellow("Whatever world ."))
 
 // background coloring testing
 console.log("\nBackground Coloring Testing:")
-console.log("white background: ", cli_coloring.bg.white("Whatever world ."))
-console.log("grey background: ", cli_coloring.bg.grey("Whatever world ."))
-console.log("black background: ", cli_coloring.bg.black("Whatever world ."))
-console.log("blue background: ", cli_coloring.bg.blue("Whatever world ."))
-console.log("cyan background: ", cli_coloring.bg.cyan("Whatever world ."))
-console.log("green background: ", cli_coloring.bg.green("Whatever world ."))
-console.log("magenta background: ", cli_coloring.bg.magenta("Whatever world ."))
-console.log("red background: ", cli_coloring.bg.red("Whatever world ."))
-console.log("yellow background: ", cli_coloring.bg.yellow("Whatever world ."))
+console.log("white background: ", cli_coloring.bg_white("Whatever world ."))
+console.log("grey background: ", cli_coloring.bg_grey("Whatever world ."))
+console.log("black background: ", cli_coloring.bg_black("Whatever world ."))
+console.log("blue background: ", cli_coloring.bg_blue("Whatever world ."))
+console.log("cyan background: ", cli_coloring.bg_cyan("Whatever world ."))
+console.log("green background: ", cli_coloring.bg_green("Whatever world ."))
+console.log("magenta background: ", cli_coloring.bg_magenta("Whatever world ."))
+console.log("red background: ", cli_coloring.bg_red("Whatever world ."))
+console.log("yellow background: ", cli_coloring.bg_yellow("Whatever world ."))
+ 
+console.log("cool".bold().red())
