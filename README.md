@@ -1,60 +1,92 @@
 # cli-coloring
 
-A simple text coloring for nodejs logs
+> 🦄 A simple text coloring for nodejs logs
 
 ## Installation
 
-```
+``` bash
   npm install cli-coloring
+  # or
+  yarn add cli-coloring
 ```
 
-## Usage in Javascript
+## Usage:
 
-###### Importing The Package
+### Importing The Package:
 
 ```javascript
-  const cli_coloring = require("cli-coloring")
+  const clr = require("cli-coloring")
 ```
 
-###### Text Styling:
+### Text Styling:
+
+available styles: 
+  - bold
+  - dim
+  - italic
+  - underline
+  - inverse
+  - strike
+  - hidden
 
 ```javascript
-  console.log("bold text: ", cli_coloring.bold("Whatever world ."))
-  console.log("dim text: ", cli_coloring.dim("Whatever world ."))
-  console.log("italic text: ", cli_coloring.italic("Whatever world ."))
-  console.log("underline text: ", cli_coloring.underline("Whatever world ."))
-  console.log("inverse text: ", cli_coloring.inverse("Whatever world ."))
-  console.log("strike text: ", cli_coloring.strike("Whatever world ."))
-  console.log("hidden text: ", cli_coloring.hidden("Whatever world ."))
+  console.log("bold text: ", clr.bold("Whatever world."))
+  // or 
+  console.log("dim text".dim())
 ```
-###### Text Coloring:
+### Text Coloring:
+
+available colors: 
+  - white
+  - grey
+  - black
+  - blue
+  - cyan
+  - green
+  - magenta
+  - red
+  - yellow
 
 ```javascript
-  console.log("white text: ", cli_coloring.white("Whatever world ."))
-  console.log("grey text: ", cli_coloring.grey("Whatever world ."))
-  console.log("black text: ", cli_coloring.black("Whatever world ."))
-  console.log("blue text: ", cli_coloring.blue("Whatever world ."))
-  console.log("cyan text: ", cli_coloring.cyan("Whatever world ."))
-  console.log("green text: ", cli_coloring.green("Whatever world ."))
-  console.log("magenta text: ", cli_coloring.magenta("Whatever world ."))
-  console.log("red text: ", cli_coloring.red("Whatever world ."))
-  console.log("yellow text: ", cli_coloring.yellow("Whatever world ."))
+  console.log("white text:", clr.white("Whatever world."))
+  // or
+  console.log("black text: ", "Whatever world.".black())
 ```
-###### Background Coloring:
+### Background Coloring:
+
+available bg colors: 
+  - bg_white
+  - bg_grey
+  - bg_black
+  - bg_blue
+  - bg_cyan
+  - bg_green
+  - bg_magenta
+  - bg_red
+  - bg_yellow
 
 ```javascript
-  console.log("white background: ", cli_coloring.bg.white("Whatever world ."))
-  console.log("grey background: ", cli_coloring.bg.grey("Whatever world ."))
-  console.log("black background: ", cli_coloring.bg.black("Whatever world ."))
-  console.log("blue background: ", cli_coloring.bg.blue("Whatever world ."))
-  console.log("cyan background: ", cli_coloring.bg.cyan("Whatever world ."))
-  console.log("green background: ", cli_coloring.bg.green("Whatever world ."))
-  console.log("magenta background: ", cli_coloring.bg.magenta("Whatever world ."))
-  console.log("red background: ", cli_coloring.bg.red("Whatever world ."))
-  console.log("yellow background: ", cli_coloring.bg.yellow("Whatever world ."))
+  console.log("cyan background: ", clr.bg_cyan("Whatever world."))
+  // or
+  console.log("green background: ", "Whatever world.".bg_green())
 ```
 
-## What Should You Get
-<img src="./screenshots/testing.png" />
+### Nested options:
 
+```javascript
+  console.log("italic underline text: ", clr.italic(clr.underline("Whatever world.")))
+  // or
+  console.log("red bold blue background:", "Whatever World.".red().bold().bg_blue())
+```
+
+## What Should You Get Somthing Like: 
+<img src="./screenshots/screenshot.png" />
+
+## Contribution
+
+Feel free to raise an [Issue](https://github.com/AM-77/cli-coloring/issues) or submit a [PR](https://github.com/AM-77/cli-coloring/pulls).
+
+## Copyright and license
+
+Code copyright 2020 AM-77. Code released under [MIT license](https://github.com/AM-77/cli-coloring/blob/master/LICENSE).
 
