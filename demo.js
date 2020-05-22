@@ -1,39 +1,40 @@
-const cli_coloring = require(".")
+const clr = require(".")
 
-// text styling testing
-console.log("Text Styling Testing\n");
+// Text styling testing
+console.log("Text Styling Options:".bold());
+console.log("bold text: ", clr.bold("Whatever world."))
+console.log("dim text: ", clr.dim("Whatever world."))
+console.log("italic text: ", clr.italic("Whatever world."))
+console.log("underline text: ", clr.underline("Whatever world."))
+console.log("inverse text: ", clr.inverse("Whatever world."))
+console.log("strike text: ", clr.strike("Whatever world."))
+console.log("hidden text: ", clr.hidden("Whatever world."))
 
-console.log("bold text: ", cli_coloring.bold("Whatever world ."))
-console.log("dim text: ", cli_coloring.dim("Whatever world ."))
-console.log("italic text: ", cli_coloring.italic("Whatever world ."))
-console.log("underline text: ", cli_coloring.underline("Whatever world ."))
-console.log("inverse text: ", cli_coloring.inverse("Whatever world ."))
-console.log("strike text: ", cli_coloring.strike("Whatever world ."))
-console.log("hidden text: ", cli_coloring.hidden("Whatever world ."))
+// Text Options
+console.log("\nText Color Options:".bold());
+console.log("white text: ", clr.white("Whatever world."))
+console.log("grey text: ", clr.grey("Whatever world."))
+console.log("black text: ", clr.black("Whatever world."))
+console.log("blue text: ", clr.blue("Whatever world."))
+console.log("cyan text: ", clr.cyan("Whatever world."))
+console.log("green text: ", clr.green("Whatever world."))
+console.log("magenta text: ", clr.magenta("Whatever world."))
+console.log("red text: ", clr.red("Whatever world."))
+console.log("yellow text: ", clr.yellow("Whatever world."))
 
-// text coloring testing
-console.log("\nText Coloring Testing:");
+// Background Color Options
+console.log("\nBackground Color Options:".bold())
+console.log("white background: ", clr.bg_white("Whatever world."))
+console.log("grey background: ", clr.bg_grey("Whatever world.".white()))
+console.log("black background: ", clr.bg_black("Whatever world."))
+console.log("blue background: ", clr.bg_blue("Whatever world."))
+console.log("cyan background: ", clr.bg_cyan("Whatever world."))
+console.log("green background: ", clr.bg_green("Whatever world."))
+console.log("magenta background: ", clr.bg_magenta("Whatever world."))
+console.log("red background: ", clr.bg_red("Whatever world."))
+console.log("yellow background: ", clr.bg_yellow("Whatever world."))
 
-console.log("white text: ", cli_coloring.white("Whatever world ."))
-console.log("grey text: ", cli_coloring.grey("Whatever world ."))
-console.log("black text: ", cli_coloring.black("Whatever world ."))
-console.log("blue text: ", cli_coloring.blue("Whatever world ."))
-console.log("cyan text: ", cli_coloring.cyan("Whatever world ."))
-console.log("green text: ", cli_coloring.green("Whatever world ."))
-console.log("magenta text: ", cli_coloring.magenta("Whatever world ."))
-console.log("red text: ", cli_coloring.red("Whatever world ."))
-console.log("yellow text: ", cli_coloring.yellow("Whatever world ."))
-
-// background coloring testing
-console.log("\nBackground Coloring Testing:")
-console.log("white background: ", cli_coloring.bg_white("Whatever world ."))
-console.log("grey background: ", cli_coloring.bg_grey("Whatever world ."))
-console.log("black background: ", cli_coloring.bg_black("Whatever world ."))
-console.log("blue background: ", cli_coloring.bg_blue("Whatever world ."))
-console.log("cyan background: ", cli_coloring.bg_cyan("Whatever world ."))
-console.log("green background: ", cli_coloring.bg_green("Whatever world ."))
-console.log("magenta background: ", cli_coloring.bg_magenta("Whatever world ."))
-console.log("red background: ", cli_coloring.bg_red("Whatever world ."))
-console.log("yellow background: ", cli_coloring.bg_yellow("Whatever world ."))
- 
-console.log("cool".bold().red())
+// Nested Color & Style Options
+console.log("\nNested Options:".bold())
+console.log("italic underline text: ", clr.italic(clr.underline("Whatever world.")))
+console.log("red bold blue background:", "Whatever World.".red().bold().bg_blue())
