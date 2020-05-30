@@ -79,7 +79,7 @@ available bg colors:
   console.log("red bold blue background:", "Whatever World.".red().bold().bg_blue())
 ```
 
-## What Should You Get Somthing Like: 
+## You Should Get Somthing Like: 
 <img src="./screenshots/screenshot.png" />
 
 ## Contribution
